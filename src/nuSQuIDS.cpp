@@ -916,7 +916,8 @@ void nuSQUIDS::EvolveState(){
   // is track time reversed
   if(track->GetFinalX() < track->GetInitialX()){
     // flip the arrow of time
-    Set_h((-1.0)*Get_h());
+    //Set_h((-1.0)*Get_h());
+    Set_h((-1.0)*Get_t());
   }
 
   if ( body->IsConstantDensity() and not iinteraction ){
